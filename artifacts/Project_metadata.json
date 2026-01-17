@@ -100,6 +100,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nametoage",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "secondNumber",
 				"outputs": [
@@ -180,11 +199,11 @@
 	},
 	"sources": {
 		".git/contract/Learn.sol": {
-			"keccak256": "0x76316f8bde1d0eb220b1eb3c50f69606d3839592c8daf6568084389b35965006",
+			"keccak256": "0x482cb5b6c7bb3d24ffea55427d1acb45741ce0748f62f16a71435d6b280f1d30",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://364157e66bc6ac0267deb22e7e795f28f66cf7140ed8c70b0d1f12c2fc44e0df",
-				"dweb:/ipfs/QmPiA3dRoHDBFtAao5sfvC8uv3VW62WVeP1yXY4a4sujGZ"
+				"bzz-raw://c59c9ebb917ddf404d8125209eecec8c7c856ef0f9c5581880d29ab0d8841aae",
+				"dweb:/ipfs/QmcXYn4pzxMQ5ucwr3zj4WxFeexCqQTNUM5MAW5dfhdqUX"
 			]
 		}
 	},
