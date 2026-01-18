@@ -8,25 +8,24 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "People",
-				"outputs": [
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
 					{
 						"internalType": "uint256",
-						"name": "age",
+						"name": "_age",
 						"type": "uint256"
 					},
 					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -40,24 +39,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_age",
-						"type": "uint256"
-					}
-				],
-				"name": "addpersons",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -107,11 +88,59 @@
 						"type": "string"
 					}
 				],
-				"name": "nametoage",
+				"name": "nameToAge",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "people",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
 						"type": "uint256"
 					}
 				],
@@ -199,11 +228,11 @@
 	},
 	"sources": {
 		".git/contract/Learn.sol": {
-			"keccak256": "0x482cb5b6c7bb3d24ffea55427d1acb45741ce0748f62f16a71435d6b280f1d30",
+			"keccak256": "0xc62d2cf4c225311f0beffd3b62654c86b1609cd5b9cce6a7dd4ae0d17a3589de",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c59c9ebb917ddf404d8125209eecec8c7c856ef0f9c5581880d29ab0d8841aae",
-				"dweb:/ipfs/QmcXYn4pzxMQ5ucwr3zj4WxFeexCqQTNUM5MAW5dfhdqUX"
+				"bzz-raw://d1be1938eb9500a3b1b5f4b392e123f9d9e655a70745c8ace4476f27d666e3f2",
+				"dweb:/ipfs/QmUDJbUTfXVHnHM7oRE3xhajQ99SDfuSnNnVpbkvaAQMNE"
 			]
 		}
 	},
