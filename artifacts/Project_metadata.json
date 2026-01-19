@@ -213,7 +213,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".git/contract/Learn.sol": "Project"
+			"contract/Learn.sol": "Project"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -227,12 +227,12 @@
 		"remappings": []
 	},
 	"sources": {
-		".git/contract/Learn.sol": {
-			"keccak256": "0xc62d2cf4c225311f0beffd3b62654c86b1609cd5b9cce6a7dd4ae0d17a3589de",
+		"contract/Learn.sol": {
+			"keccak256": "0xa7760b5f1fc95f0523a21c68c724e1f7f5743f70cfd8e97c21347315ec99f690",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d1be1938eb9500a3b1b5f4b392e123f9d9e655a70745c8ace4476f27d666e3f2",
-				"dweb:/ipfs/QmUDJbUTfXVHnHM7oRE3xhajQ99SDfuSnNnVpbkvaAQMNE"
+				"bzz-raw://ee5fa84ee3fdfe4cd605c2b7168c1b28f999ab67beea6608df6f5736c74bd5fa",
+				"dweb:/ipfs/QmVRmZhHxbBBQQcCsmEXjRAnVXYZBbaaB3jj31so5nKxtE"
 			]
 		}
 	},

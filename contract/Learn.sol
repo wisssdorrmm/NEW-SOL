@@ -3,51 +3,61 @@ pragma solidity ^0.8.13;
 
 contract Project {
 
-    uint public firstNumber;
-    uint public secondNumber;
+    uint256 public firstNumber;
+    uint256 public secondNumber;
+     string memory _name,
+        uint256 _age,
+        uint256 _favoriteNumber
 
     struct Person {
         string name;
-        uint age;
-        uint favoriteNumber;
+        uint256 age;
+        uint256 favoriteNumber;
     }
 
     Person[] public people;
-    mapping(string => uint) public nameToAge;
-    mapping(string => uint) public nameToFavoriteNumber;
 
-    function setFirstNumber(uint _firstNumber) public {
+    mapping(string => uint256) public nameToAge;
+    mapping(string => uint256) public nameToFavoriteNumber;
+
+    function setFirstNumber(uint256 _firstNumber) public {
         firstNumber = _firstNumber;
     }
 
-    function setSecondNumber(uint _secondNumber) public {
+    function setSecondNumber(uint256 _secondNumber) public {
         secondNumber = _secondNumber;
     }
 
-    function addition() public view returns (uint) {
+    function addition() public view returns (uint256) {
         return firstNumber + secondNumber;
     }
 
-    function subtraction() public view returns (uint) {
+    function subtraction() public view returns (uint256) {
+        require(firstNumber >= secondNumber, "Underflow error");
         return firstNumber - secondNumber;
     }
 
-    function multiplication() public view returns (uint) {
+    function multiplication() public view returns (uint256) {
         return firstNumber * secondNumber;
     }
 
-    function division() public view returns (uint) {
-        require(secondNumber != 0, "Division by zero");
+    function division() public view returns (uint256) {
         return firstNumber / secondNumber;
     }
 
     function addPerson(
-        string memory _name,
-        uint _age,
-        uint _favoriteNumber
+       
     ) public {
         people.push(Person(_name, _age, _favoriteNumber));
         nameToAge[_name] = _age;
         nameToFavoriteNumber[_name] = _favoriteNumber;
     }
+
+    function getPerson(uint256 index) public view returns (Person memory) {
+        return people[index];
+    }
+    function getPersonAge(string memory _name) public view returns (uint256) {
+        return nameToAge[_name];
+    }
+
 }

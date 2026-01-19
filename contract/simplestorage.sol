@@ -1,30 +1,63 @@
-
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.13;
 
-contract SimpleStorage {
+contract Project {
 
-    uint256 favoriteNumber;
+    uint256 public firstNumber;
+    uint256 public secondNumber;
+     string memory _name,
+        uint256 _age,
+        uint256 _favoriteNumber
 
-    struct People {
-        uint256 favoriteNumber;
+    struct Person {
         string name;
+        uint256 age;
+        uint256 favoriteNumber;
     }
-  
-    People[] public people;
 
+    Person[] public people;
+
+    mapping(string => uint256) public nameToAge;
     mapping(string => uint256) public nameToFavoriteNumber;
 
-    function store(uint256 _favoriteNumber) public virtual {
-        favoriteNumber = _favoriteNumber;
-    }
-    
-    function retrieve() public view returns (uint256){
-        return favoriteNumber;
+    function setFirstNumber(uint256 _firstNumber) public {
+        firstNumber = _firstNumber;
     }
 
-    function addPerson(string memory _name, uint256 _favoriteNumber) public {
-        people.push(People(_favoriteNumber, _name));
+    function setSecondNumber(uint256 _secondNumber) public {
+        secondNumber = _secondNumber;
+    }
+
+    function addition() public view returns (uint256) {
+        return firstNumber + secondNumber;
+    }
+
+    function subtraction() public view returns (uint256) {
+        require(firstNumber >= secondNumber, "Underflow error");
+        return firstNumber - secondNumber;
+    }
+
+    function multiplication() public view returns (uint256) {
+        return firstNumber * secondNumber;
+    }
+
+    function division() public view returns (uint256) {
+        return firstNumber / secondNumber;
+    }
+
+    function addPerson(
+       
+    ) public {
+        people.push(Person(_name, _age, _favoriteNumber));
+        nameToAge[_name] = _age;
         nameToFavoriteNumber[_name] = _favoriteNumber;
     }
+
+    function getPerson(uint256 index) public view returns (Person memory) {
+        return people[index];
+    }
+    function getPersonAge(string memory _name) public view returns (uint256) {
+        return nameToAge[_name];
+    }
+
 }
