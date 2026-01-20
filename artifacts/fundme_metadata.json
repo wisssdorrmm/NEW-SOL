@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "addressToAmountFunded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract/fundme.sol": "fundme"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract/fundme.sol": {
+			"keccak256": "0x25f748aae3e5195a01adff8040b789c61fcb280fa78c7eddcb0bde161061dd16",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cbd0fdaf3d2d6886de383ec067e90bd151aca263fda3ad2f295d8d3001d8606d",
+				"dweb:/ipfs/QmPFyfK5mhTwtoQ4VaJj7AJkXZhgK4QJ1D2FeyUeerUG6f"
+			]
+		}
+	},
+	"version": 1
+}

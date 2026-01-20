@@ -5,9 +5,6 @@ contract Project {
 
     uint256 public firstNumber;
     uint256 public secondNumber;
-     string memory _name,
-        uint256 _age,
-        uint256 _favoriteNumber
 
     struct Person {
         string name;
@@ -33,7 +30,7 @@ contract Project {
     }
 
     function subtraction() public view returns (uint256) {
-        require(firstNumber >= secondNumber, "Underflow error");
+       
         return firstNumber - secondNumber;
     }
 
@@ -46,18 +43,12 @@ contract Project {
     }
 
     function addPerson(
-       
+        string memory _name,
+        uint256 _age,
+        uint256 _favoriteNumber
     ) public {
         people.push(Person(_name, _age, _favoriteNumber));
         nameToAge[_name] = _age;
         nameToFavoriteNumber[_name] = _favoriteNumber;
     }
-
-    function getPerson(uint256 index) public view returns (Person memory) {
-        return people[index];
-    }
-    function getPersonAge(string memory _name) public view returns (uint256) {
-        return nameToAge[_name];
-    }
-
 }

@@ -213,7 +213,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract/Learn.sol": "Project"
+			"contract/simplestorage.sol": "Project"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -227,12 +227,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contract/Learn.sol": {
-			"keccak256": "0xa7760b5f1fc95f0523a21c68c724e1f7f5743f70cfd8e97c21347315ec99f690",
+		"contract/simplestorage.sol": {
+			"keccak256": "0x5029d17c28d9fed4caf515a7b378eb5b0527e98d09feccee789fdba1e131681f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ee5fa84ee3fdfe4cd605c2b7168c1b28f999ab67beea6608df6f5736c74bd5fa",
-				"dweb:/ipfs/QmVRmZhHxbBBQQcCsmEXjRAnVXYZBbaaB3jj31so5nKxtE"
+				"bzz-raw://234cbe8dab444f424265056c601d8346ad045b001cefe88f11ba8135bff2affb",
+				"dweb:/ipfs/QmPgXEpUbjxCUR4XmeRY5GhMDjxAshDMz4ndLqKNq5jVd4"
 			]
 		}
 	},
