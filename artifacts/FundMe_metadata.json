@@ -68,6 +68,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "time",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -106,11 +119,11 @@
 	},
 	"sources": {
 		"contract/fundme.sol": {
-			"keccak256": "0xd7d51d01d85787a2562714f4c5669035a01977f8b6562bebf77b86e1d00b5d38",
+			"keccak256": "0xb416a0699bd6d975f9c8b27e88550f5df1837f071c13913fada9192f8bcd2276",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://602e82b617cb6f588457088e89811d67eafc8d7c022459afe3373afc3c65f312",
-				"dweb:/ipfs/QmU7MNUSe6nv7NEZzRA9em9ZqKfoaCEXz6q38Yg6ZbaibZ"
+				"bzz-raw://b8fddd7d43a1a14cbc95ae19030ed1da449d336777b1dacf82bb436e25d38509",
+				"dweb:/ipfs/QmeHJT5GBNAq2vVq4bSt5m2MFc8g9PBRaJt6vKFf6Kpmga"
 			]
 		}
 	},

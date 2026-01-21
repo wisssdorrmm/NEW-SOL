@@ -5,6 +5,7 @@ contract FundMe {
 
     mapping(address => uint256) public addressToAmountFunded;
     address public owner;
+    uint public time;
 
     constructor() {
         owner = msg.sender;
