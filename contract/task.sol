@@ -32,5 +32,29 @@ contract TaskManager {
         totalTasks++;
     }
 
-    
+    function completeTask(uint _id) public {
+        require(_id < totalTasks, "Task does not exist");
+
+        tasks[_id].completed = true;
+        taskCompleted[_id] = true;
+    }
+
+    function getTask(uint _id) public view returns (
+        uint,
+        string memory,
+        bool
+    ) {
+        Task memory task = tasks[_id];
+        return (task.id, task.title, task.completed);
+    }
+
+
+    function getTaskCount() public view returns (uint) {
+        return tasks.length;
+    }
+
+
+    function toggleContract(bool _status) public {
+        contractActive = _status;
+    }
 }
