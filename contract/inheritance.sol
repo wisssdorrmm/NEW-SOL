@@ -12,6 +12,6 @@ contract Parent {
 
 contract Child is Parent {
     function doubleNumber() public view returns (uint) {
-        
+        return number * 2;
     }
 }
