@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.31+commit.fd3a2265"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -11,46 +11,10 @@
 				"type": "constructor"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "fallback"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "addressToAmountFunded",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -68,27 +32,10 @@
 			},
 			{
 				"inputs": [],
-				"name": "time",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -104,9 +51,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract/fundme.sol": "FundMe"
+			"contract/anotherfund.sol": "FundMe"
 		},
-		"evmVersion": "osaka",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -118,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contract/fundme.sol": {
-			"keccak256": "0xb416a0699bd6d975f9c8b27e88550f5df1837f071c13913fada9192f8bcd2276",
+		"contract/anotherfund.sol": {
+			"keccak256": "0x4eafd67e7bd08b839defb1ecaf1c6f6f5bb09ff05d11897ffce6870266e8210d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b8fddd7d43a1a14cbc95ae19030ed1da449d336777b1dacf82bb436e25d38509",
-				"dweb:/ipfs/QmeHJT5GBNAq2vVq4bSt5m2MFc8g9PBRaJt6vKFf6Kpmga"
+				"bzz-raw://2456583a990c2459a27babb30a5410b5bb0c97eb66bc7ec3b3be0e21b3774c8e",
+				"dweb:/ipfs/QmNSs4cLi7Qg5E1D868YSTP6R7j4uy1YWUtFgxZqzA8pzi"
 			]
 		}
 	},
