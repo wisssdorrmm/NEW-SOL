@@ -9,16 +9,78 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "_aggregatorAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposited",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrew",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "addressToBalance",
+				"name": "balanceOf",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "chainlinkAggregator",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -42,6 +104,32 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLatestPrice",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -81,11 +169,11 @@
 			]
 		},
 		"contract/sole.sol": {
-			"keccak256": "0x5d2d72a0cf231583e94c00d9d2a98d26e2cb847d89f896d7dc195283c3c51d73",
+			"keccak256": "0x4cdc81a2c9febad074c3319867f74e0b8905de50bfde393d0d856a6244addc9e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0513c6ea359ead3ebe9da558371374e6631fcc64caa6df8d95ae49b7b73d1fa8",
-				"dweb:/ipfs/QmcAV5oZUJnMYpqe83TzPQFWSY4dbbWUZxdDfKCmPscjEL"
+				"bzz-raw://715bd5d6950c1a27cc6b190103934302101a284102f1d51035a2e5366ca4fe0f",
+				"dweb:/ipfs/QmYcirHVDNmUxHah7o58bDbpeSq3vAiHfCuZDn1V8X9NVZ"
 			]
 		}
 	},
